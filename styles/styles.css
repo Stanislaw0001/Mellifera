@@ -1,4 +1,7 @@
 /************  Reset styles *************/
+* {
+    box-sizing: border-box;
+}
 
 h1,
 h2,
@@ -34,9 +37,11 @@ img {
 :root {
     --color-light: #ffffff;
     --color-dark-light: #F7F3F0;
-    --color-light-gray: #3C3C3C;
+    --color-gray: #383838;
+    --color-light-gray: #737373;
     --color-dark: #131313;
     --color-dark-gold: #D3A863;
+    --color-dark-gold-hover: #7e643b;
     --color-dark-red: #C74817;
     --color-red: #EE2852;
     --transition-duration: 0.2s;
@@ -47,12 +52,13 @@ html {
 }
 
 body {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
-    background: var(--color-dark-gray);
-    color: var(--color-light);
+    line-height: 1.6;
+    background: var(--color-dark-light);
+    color: var(--color-gray);
 }
 
 svg *[fill] { fill: currentColor }
@@ -80,7 +86,84 @@ svg * {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 100px 50px;   
+    padding: 0 310px;   
+}
+
+
+/***************  HEADER  ****************/
+
+.header {
+    background: var(--color-dark-light);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-image {
+    padding-block: 35px;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 24px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--color-gray);
+}
+
+.header-link span {
+    color: var(--color-red);
+}
+
+.header-link:hover {
+    color: var(--color-light-gray);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-basket {
+    display: flex;
+    align-items: center;
+    height: 117px;
+}
+
+.svg-basket {
+    width: 20px;
+    height: 20px;
+}
+
+.header-button {
+    padding: 15px 25px;
+    border: none;
+    background: var(--color-dark-gold);
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+.header-button:hover {
+    background: var(--color-dark-gold-hover);
 }
