@@ -1,0 +1,86 @@
+/************  Reset styles *************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-dark-light: #F7F3F0;
+    --color-light-gray: #3C3C3C;
+    --color-dark: #131313;
+    --color-dark-gold: #D3A863;
+    --color-dark-red: #C74817;
+    --color-red: #EE2852;
+    --transition-duration: 0.2s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: normal;
+    background: var(--color-dark-gray);
+    color: var(--color-light);
+}
+
+svg *[fill] { fill: currentColor }
+svg *[stroke] { stroke: currentColor }
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 50px;   
+}
