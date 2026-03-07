@@ -1,7 +1,4 @@
 /************  Reset styles *************/
-* {
-    box-sizing: border-box;
-}
 
 h1,
 h2,
@@ -44,6 +41,7 @@ img {
     --color-dark-gold-hover: #7e643b;
     --color-dark-red: #C74817;
     --color-red: #EE2852;
+    --color-dark-red: #a61c39;
     --transition-duration: 0.2s;
 }
 
@@ -72,6 +70,15 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
+.button {
+    padding: 15px 25px;
+    border: none;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-light);
+}
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -94,14 +101,11 @@ svg * {
 
 /***************  HEADER  ****************/
 
-.header {
-    background: var(--color-dark-light);
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--color-dark-light);
 }
 
 .header-logo-image {
@@ -110,7 +114,7 @@ svg * {
 
 .header-navigation {
     display: flex;
-    gap: 24px;
+    gap: 50px;
 }
 
 .header-menu {
@@ -155,15 +159,96 @@ svg * {
 }
 
 .header-button {
-    padding: 15px 25px;
-    border: none;
-    background: var(--color-dark-gold);
     font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--color-light);
+    background: var(--color-dark-gold);
 }
 
 .header-button:hover {
     background: var(--color-dark-gold-hover);
+}
+
+/***************  HERO  ******************/
+
+.hero {
+    background-image: url("../image/hero-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 970px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero-title {
+    font-size: 18px;
+    letter-spacing: 0.28em;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+}
+
+.hero-subtitle {
+    font-size: 136px;
+    margin-bottom: 6px;
+}
+
+.hero-text {
+    width: 500px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    width: 170px;
+    height: 60px;
+    background: var(--color-red);
+}
+
+.hero-button:hover {
+    background: var(--color-dark-red);
+}
+
+.hero-image {
+    position: relative;
+    top: 15px;
+    right: 100px;
+    width: 759px;
+    height: 805px;
+}
+
+.hero-image-honey {
+    position: relative;
+    top: -50px;
+    right: 250px;
+}
+
+.button-chat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    width: 107px;
+    height: 50px;
+    border-radius: 30px;
+    background: var(--color-red);
+}
+
+.button-chat-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.button-chat-text {
+    font-size: 15px;
+    letter-spacing: 0.04em;
 }
