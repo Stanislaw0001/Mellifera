@@ -33,6 +33,7 @@ img {
 
 :root {
     --color-light: #ffffff;
+    --color-gray-light: #e5e5e5;
     --color-dark-light: #F7F3F0;
     --color-gray: #383838;
     --color-light-gray: #737373;
@@ -167,7 +168,7 @@ svg * {
     background: var(--color-dark-gold-hover);
 }
 
-/***************  HERO  ******************/
+/***************  HERO SECTION  ******************/
 
 .hero {
     background-image: url("../image/hero-bg.webp");
@@ -234,13 +235,17 @@ svg * {
     align-items: center;
     gap: 8px;
     padding: 10px 15px;
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 100px;
     width: 107px;
     height: 50px;
     border-radius: 30px;
     background: var(--color-red);
+}
+
+.button-chat:hover {
+    background: var(--color-dark-red);
 }
 
 .button-chat-svg {
@@ -251,4 +256,189 @@ svg * {
 .button-chat-text {
     font-size: 15px;
     letter-spacing: 0.04em;
+}
+
+/****************  MISSION SECTION  *******************/
+
+.mission-container {
+    display: flex;
+    gap: 80px;
+    padding-block: 40px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-content-video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 28px;
+}
+
+.video-button {
+    position: absolute;
+    top: 110%;
+    left: 34%;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: var(--color-light);
+}
+
+.button-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.video-button:hover {
+    background-color: var(--color-gray-light);
+}
+
+.left-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.left-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-gray);
+    margin-bottom: 30px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 25px;
+    background: var(--color-light);
+}
+
+.right-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 17px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.right-news {
+    padding-top: 7px;
+    padding-left: 15px;
+}
+
+.right-subtitle {
+    color: #c74817;
+    margin-bottom: 5px;
+}
+
+.right-title-name {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    margin-bottom: 14px;
+}
+
+.right-subtitle-name {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-light-gray);
+    margin-bottom: 44px;
+}
+
+.right-link {
+    font-size: 13px;
+    line-height: 2.15385;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+.right-link svg {
+    width: 14px;
+    height: 13px;
+    fill: currentColor;
+}
+
+/******************** PRODUCTS SECTION *************************/
+
+.products {
+    background-image: url("../image/products-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 855px;
+    display: flex;
+    align-items: center;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.products-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.products-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-gray);
+}
+
+.products-card-list {
+    display: flex;
+    gap: 80px;
+}
+
+.products-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.products-card-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+.products-card-price {
+    font-size: 22px;
+    color: var(--color-dark-red);
+}
+
+.products-card-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-light-gray);
+}
+
+.products-add {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.products-add-svg {
+    width: 19px;
+    height: 28px;
 }
