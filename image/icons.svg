@@ -16,7 +16,7 @@
         stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     </g>
   </symbol>
-  <symbol fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" id="facebook">
+  <symbol fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" id="facebook">
     <path
       d="m1416.013 791.915-30.91 225.617h-371.252v789.66H788.234v-789.66H449.808V791.915h338.426V585.137c0-286.871 176.207-472.329 449.09-472.329 116.87 0 189.744 6.205 231.822 11.845l-3.272 213.66-173.5.338c-4.737-.451-117.771-9.25-199.332 65.655-52.568 48.169-79.191 117.433-79.191 205.65v181.96h402.162Zm-247.276-304.018c44.446-41.401 113.71-36.889 118.787-36.663l289.467-.113 6.204-417.504-43.544-10.717C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l61.932-451.233H1126.66v-69.152c0-54.937 14.214-96 42.078-122.058Z"
       fill-rule="evenodd"></path>
@@ -36,12 +36,12 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 25 25" id="instagram">
     <path fill-rule="evenodd" clip-rule="evenodd"
       d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z"
-      stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     <path fill-rule="evenodd" clip-rule="evenodd"
       d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z"
-      stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-    <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="#000000"></rect>
-    <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="#000000"
+      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="white"></rect>
+    <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="white"
       stroke-linecap="round"></rect>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="twitter">

@@ -40,7 +40,7 @@ img {
     --color-dark: #131313;
     --color-dark-gold: #D3A863;
     --color-dark-gold-hover: #7e643b;
-    --color-dark-red: #C74817;
+    --color-orange: #C74817;
     --color-red: #EE2852;
     --color-dark-red: #a61c39;
     --transition-duration: 0.2s;
@@ -78,6 +78,16 @@ svg * {
     text-transform: uppercase;
     text-align: center;
     color: var(--color-light);
+    background: var(--color-red);
+}
+
+.button:hover {
+    background: var(--color-dark-red);
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--color-dark);
 }
 
 .visually-hidden {
@@ -172,7 +182,7 @@ svg * {
 
 .hero {
     background-image: url("../image/hero-bg.webp");
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 970px;
@@ -209,11 +219,6 @@ svg * {
 .hero-button {
     width: 170px;
     height: 60px;
-    background: var(--color-red);
-}
-
-.hero-button:hover {
-    background: var(--color-dark-red);
 }
 
 .hero-image {
@@ -241,11 +246,6 @@ svg * {
     width: 107px;
     height: 50px;
     border-radius: 30px;
-    background: var(--color-red);
-}
-
-.button-chat:hover {
-    background: var(--color-dark-red);
 }
 
 .button-chat-svg {
@@ -270,6 +270,7 @@ svg * {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .left-content-video {
@@ -281,8 +282,8 @@ svg * {
 
 .video-button {
     position: absolute;
-    top: 110%;
-    left: 34%;
+    top: 108%;
+    left: 36%;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -304,7 +305,6 @@ svg * {
 
 .left-title {
     font-size: 36px;
-    text-transform: uppercase;
     margin-bottom: 6px;
 }
 
@@ -319,33 +319,25 @@ svg * {
     display: flex;
     flex-direction: column;
     padding-inline: 25px;
+    padding-bottom: 20px;
     background: var(--color-light);
 }
 
 .right-title {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 38px;
+    margin-top: 20px;
     margin-bottom: 17px;
     font-size: 36px;
-    text-transform: uppercase;
-}
-
-.right-news {
-    padding-top: 7px;
-    padding-left: 15px;
 }
 
 .right-subtitle {
-    color: #c74817;
+    color: var(--color-orange);
     margin-bottom: 5px;
 }
 
 .right-title-name {
     font-size: 22px;
-    text-transform: uppercase;
-    color: var(--color-dark);
     margin-bottom: 14px;
 }
 
@@ -358,23 +350,21 @@ svg * {
 
 .right-link {
     font-size: 13px;
-    line-height: 2.15385;
+    line-height: 2.15;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--color-dark);
 }
 
-.right-link svg {
-    width: 14px;
-    height: 13px;
-    fill: currentColor;
+.right-link:hover {
+    scale: 1.5;
 }
 
 /******************** PRODUCTS SECTION *************************/
 
 .products {
     background-image: url("../image/products-bg.webp");
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 855px;
@@ -391,9 +381,7 @@ svg * {
 
 .products-title {
     font-size: 48px;
-    text-transform: uppercase;
     text-align: center;
-    color: var(--color-dark);
 }
 
 .products-subtitle {
@@ -417,13 +405,11 @@ svg * {
 
 .products-card-title {
     font-size: 26px;
-    text-transform: uppercase;
-    color: var(--color-dark);
 }
 
 .products-card-price {
     font-size: 22px;
-    color: var(--color-dark-red);
+    color: var(--color-orange);
 }
 
 .products-card-subtitle {
@@ -432,13 +418,271 @@ svg * {
     color: var(--color-light-gray);
 }
 
-.products-add {
+.products-add-basket {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 15px;
+    color: var(--color-dark);
 }
 
 .products-add-svg {
     width: 19px;
     height: 28px;
+}
+
+
+/******************* FEEDBACK-SECTION **********************/
+
+.feedback {
+    background-image: url(../image/review-bg.webp);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 717px;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-section {
+    display: flex;
+    gap: 75px;
+}
+
+.feedback-image {
+    max-width: 312px;
+    height: 333px;
+}
+
+.feedback-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--color-light-gray);
+    margin-bottom: 38px;
+}
+
+.feedback-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    margin-bottom: 17px;
+}
+
+.feedback-subtitle {
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+}
+
+
+/*********************** GALLERY-SECTION ***************/
+
+.gallery-container {
+    padding-bottom: 50px;
+}
+
+.gallery-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-title {
+    font-size: 48px;
+    margin-bottom: 17px;
+}
+
+.gallery-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-light-gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 18px;
+}
+
+
+/******************* SUBSCRIBE-SECTION *********************/
+
+.subscribe {
+    background-image: url(../image/subscribe-bg.webp);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1355px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.up-content {
+    display: flex;
+    gap: 60px;
+}
+
+.subscribe-up-image {
+    max-width: 591px;
+    height: 617px;
+}
+
+.up-content-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe-up-tilte {
+    font-size: 48px;
+    margin-bottom: 17px;
+}
+
+.subscribe-up-subtitle {
+    width: 515px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-light-gray);
+    margin-bottom: 55px;
+}
+
+.input {
+    display: flex;
+    gap: 40px;
+}
+
+.subscribe-input {
+    border: 1px solid #545050;
+    padding: 18px 21px 19px;
+    width: 418px;
+    height: 62px;
+}
+
+.down-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-down-title {
+    font-size: 48px;
+}
+
+.subscribe-down-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-light-gray);
+    margin-bottom: 50px;
+}
+
+.subscribe-card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}
+
+.subscribe-card-item {
+    display: flex;
+    gap: 44px;
+    background-color: var(--color-light);
+    padding: 29px 54px;
+}
+
+.subscribe-card-image {
+    max-width: 156px;
+}
+
+.subscribe-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-card-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.subscribe-card-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-light-gray);
+    margin-bottom: 15px;
+}
+
+.subscribe-card-link {
+    max-width: 120px;
+    font-size: 13px;
+    line-height: 2.15;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+}
+
+.subscribe-card-link:hover {
+    scale: 1.1;
+}
+
+
+/*****************************  FOOTER  **************************/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.footer-social-link {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+}
+
+.footer-social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: var(--color-dark);
 }
