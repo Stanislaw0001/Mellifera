@@ -671,6 +671,10 @@ svg * {
     background-color: var(--color-orange);
 }
 
+.footer-social-item:hover {
+    scale: 1.2;
+}
+
 .footer-social-icon {
     width: 25px;
     height: 25px;
