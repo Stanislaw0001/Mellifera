@@ -29,6 +29,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 :root {
@@ -273,6 +274,10 @@ svg * {
     width: 100%;
 }
 
+.video-wrapper {
+    position: relative;
+}
+
 .left-content-video {
     width: 100%;
     max-width: 800px;
@@ -282,8 +287,9 @@ svg * {
 
 .video-button {
     position: absolute;
-    top: 143%;
-    left: 33%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
     border-radius: 50%;
     display: flex;
@@ -301,6 +307,7 @@ svg * {
 
 .video-button:hover {
     background-color: var(--color-gray-light);
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .left-title {
@@ -401,6 +408,11 @@ svg * {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.products-card-item:hover {
+    transition: var(--transition-duration);
+    scale: 1.1;
 }
 
 .products-card-title {
@@ -512,6 +524,11 @@ svg * {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     gap: 18px;
+}
+
+.gallery-item:hover {
+    transition: var(--transition-duration);
+    scale: 1.05;
 }
 
 
