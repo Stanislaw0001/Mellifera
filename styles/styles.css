@@ -290,6 +290,7 @@ section {
     width: 107px;
     height: 50px;
     border-radius: 30px;
+    z-index: 999;
 }
 
 .button-chat-svg {
@@ -498,17 +499,18 @@ section {
     left: 8%;
 }
 .products-decor-2 {
-    top: 34%;
-    left: 8%;
+    transform: rotate(24deg);
+    top: 13%;
+    right: 26%;
 }
 .products-decor-3 {
-    transform: scale(1deg);
-    top: 34%;
-    left: 8%;
+    transform: rotate(240deg);
+    bottom: 0%;
+    left: 0%;
 }
 .products-decor-4 {
-    top: 34%;
-    left: 8%;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -560,6 +562,19 @@ section {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--color-orange);
+}
+
+.feedback-decor {
+    bottom: 0%;
+    left: 0%;
+}
+.feedback-decor-2 {
+    bottom: 14%;
+    right: 0%;
+}
+.feedback-decor-3 {
+    bottom: 0%;
+    left: 0%;
 }
 
 
