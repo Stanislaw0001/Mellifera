@@ -421,13 +421,7 @@ section {
 /******************** PRODUCTS SECTION *************************/
 
 .products {
-    background-image: url("../image/products-bg.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 855px;
-    display: flex;
-    align-items: center;
 }
 
 .products-container {
@@ -517,10 +511,6 @@ section {
 /******************* FEEDBACK-SECTION **********************/
 
 .feedback {
-    background-image: url(../image/review-bg.webp);
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 717px;
     display: flex;
     align-items: center;
@@ -620,10 +610,6 @@ section {
 /******************* SUBSCRIBE-SECTION *********************/
 
 .subscribe {
-    background-image: url(../image/subscribe-bg.webp);
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 1355px;
     display: flex;
     align-items: center;
@@ -675,6 +661,10 @@ section {
     padding: 18px 21px 19px;
     width: 418px;
     height: 62px;
+}
+
+.subscribe-input:hover {
+    border: 1px solid var(--color-red);
 }
 
 .down-content {
