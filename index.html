@@ -131,13 +131,6 @@
             class="hero-decor-10 decor"
           />
         </div>
-
-        <button type="button" class="button-chat button">
-          <svg class="button-chat-svg">
-            <use xlink:href="./image/icons.svg#chat-svg"></use>
-          </svg>
-          <span class="button-chat-text">Chat</span>
-        </button>
       </section>
       <section class="mission" id="mission">
         <div class="mission-container container">
@@ -600,5 +593,33 @@
         <p class="footer-text">© 2020 Qode Interactive All Rights Reserved</p>
       </div>
     </footer>
+    <div class="chat-container">
+      <div class="chat-header">
+        Support chat
+        <button class="close-chat-btn">
+          <svg class="close-chat-svg">
+            <use xlink:href="./image/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="chat-messages">
+        <div class="message-received">Hello!</div>
+      </div>
+      <div class="chat-input-wrapper">
+        <input
+          class="chat-input"
+          type="text"
+          placeholder="Enter your message..."
+        />
+        <button type="submit" class="chat-input-btn">Submit</button>
+      </div>
+    </div>
+    <!-- Кнопка вызова -->
+    <button type="button" class="button-chat button">
+      <svg class="button-chat-svg">
+        <use xlink:href="./image/icons.svg#chat-svg"></use>
+      </svg>
+      <span class="button-chat-text">Chat</span>
+    </button>
   </body>
 </html>
