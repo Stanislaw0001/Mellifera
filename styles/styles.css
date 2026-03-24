@@ -500,13 +500,13 @@ section {
 }
 .products-decor-2 {
     transform: rotate(24deg);
-    top: 13%;
-    right: 26%;
+    top: 12%;
+    right: 20%;
 }
 .products-decor-3 {
-    transform: rotate(240deg);
-    bottom: 0%;
-    left: 0%;
+    transform: rotate(267deg);
+    top: 6%;
+    right: 6%;
 }
 .products-decor-4 {
     bottom: 0;
@@ -565,14 +565,16 @@ section {
 }
 
 .feedback-decor {
-    bottom: 0%;
-    left: 0%;
+    transform: rotate(145deg);
+    bottom: 29%;
+    left: 9%;
 }
 .feedback-decor-2 {
-    bottom: 14%;
+    bottom: 5%;
     right: 0%;
 }
 .feedback-decor-3 {
+    transform: rotate(182deg);
     bottom: 0%;
     left: 0%;
 }
@@ -737,6 +739,22 @@ section {
 
 .subscribe-card-link:hover {
     scale: 1.1;
+}
+
+.subscribe-decor {
+    transform: rotate(268deg);
+    top: 9%;
+    right: 20%;
+}
+.subscribe-decor-2 {
+    transform: rotate(180deg);
+    top: 21%;
+    left: 0%;
+}
+.subscribe-decor-3 {
+    transform: rotate(268deg);
+    top: 5%;
+    right: 5%;
 }
 
 
