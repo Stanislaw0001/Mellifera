@@ -783,7 +783,6 @@ section {
 
 .button-chat {
     display: flex;
-    display: none;
     align-items: center;
     gap: 8px;
     padding: 10px 15px;
@@ -815,9 +814,19 @@ section {
   background: var(--color-dark-light);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  display: flex;
+  display: none;   /* display: none; Скрыт по умолчанию */
   flex-direction: column;
-  /* display: none; Скрыт по умолчанию */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: var(--transition-duration);
+  pointer-events: none;
+}
+
+.chat-container.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .chat-header {
