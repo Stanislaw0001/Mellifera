@@ -77,6 +77,7 @@ svg * {
 .button {
     padding: 15px 25px;
     border: none;
+    border-radius: 4px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-align: center;
@@ -177,14 +178,68 @@ section {
     height: 20px;
 }
 
-.header-button {
-    font-size: 14px;
-    background: var(--color-dark-gold);
+.list-dropdown {
+    position: relative;
+    width: 200px;
 }
 
-.header-button:hover {
+.list-group {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--color-dark-gold);
+    border-radius: 8px;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: var(--transition-duration);
+    z-index: 10;
+}
+
+.list-group li {
+    padding: 10px 15px;
+}
+
+.list-group li:hover {
     background: var(--color-dark-gold-hover);
 }
+
+.list-dropdown.active .list-group {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.list-dropdown.active .list-button-svg {
+    transform: rotate(90deg);
+}
+
+.list-button-wrapper {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: var(--color-dark-gold);
+} 
+
+.list-button-wrapper:hover {
+    background: var(--color-dark-gold-hover);
+}
+
+.list-button-wrapper:hover .list-button-svg {
+    background: var(--color-dark-gold-hover);
+    transform: rotate(90deg);
+}
+
+.list-button-svg {
+    width: 18px;
+    height: 18px;
+    transition: var(--transition-duration);
+}
+
 
 /***************  HERO SECTION  ******************/
 
@@ -387,7 +442,7 @@ section {
     line-height: 2.15;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--color-dark);
+    color: var(--color-orange);
 }
 
 .right-link:hover {
@@ -805,6 +860,25 @@ section {
     letter-spacing: 0.04em;
 }
 
+.chat-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-duration);
+    z-index: 998;
+    
+}
+
+.chat-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .chat-container {
   position: fixed;
   bottom: 20px;
@@ -820,6 +894,7 @@ section {
   transform: translateY(20px);
   transition: var(--transition-duration);
   pointer-events: none;
+  z-index: 999;
 }
 
 .chat-container.active {

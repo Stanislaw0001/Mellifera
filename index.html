@@ -56,7 +56,28 @@
                 <use xlink:href="./image/icons.svg#basket"></use>
               </svg>
             </a>
-            <button class="header-button button" type="button">Contact</button>
+            <div class="basket-card"></div>
+
+            <div class="list-dropdown">
+              <button class="list-button-wrapper button">
+                Contacts
+                <svg class="list-button-svg">
+                  <use xlink:href="./image/icons.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <ul id="myList" class="list-group">
+                <li value="tel">
+                  <a href="tel:+17184076400" class="select-number"
+                    >+ (1) 718 - 407 - 6400</a
+                  >
+                </li>
+                <li value="email">
+                  <a href="mailto:mellifera@gmail.com" class="select-email"
+                    >mellifera@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -614,13 +635,14 @@
         <button type="submit" class="chat-input-btn">Submit</button>
       </div>
     </div>
-    <!-- Кнопка вызова -->
+    <!-- Кнопка чата -->
     <button type="button" class="button-chat button">
       <svg class="button-chat-svg">
         <use xlink:href="./image/icons.svg#chat-svg"></use>
       </svg>
       <span class="button-chat-text">Chat</span>
     </button>
+    <div class="chat-overlay"></div>
     <script src="main.js"></script>
   </body>
 </html>
