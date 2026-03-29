@@ -261,12 +261,12 @@ section {
 }
 
 .hero-subtitle {
-    font-size: 136px;
+    font-size: clamp(48px, 10vw, 136px);
     margin-bottom: 6px;
 }
 
 .hero-text {
-    width: 500px;
+    max-width: 500px;
     font-weight: 400;
     font-size: 18px;
     color: var(--color-gray);
